@@ -7,8 +7,8 @@ Shows daily KMC trends and usage patterns.
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-from dashboard_utils import safe_dataframe_display
-from dashboard_metrics import calculate_daily_kmc_analysis
+from utils.dashboard_utils import safe_dataframe_display
+from utils.dashboard_metrics import calculate_daily_kmc_analysis
 
 
 def render_daily_kmc_tab(filtered_data, discharge_data):

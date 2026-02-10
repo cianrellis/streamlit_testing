@@ -7,7 +7,7 @@ Shows basic program metrics and hospital distribution.
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from dashboard_utils import THEME_A_COLORS
+from utils.dashboard_utils import THEME_A_COLORS
 
 
 def render_overview_tab(baby_data, filtered_data):

@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from dashboard_metrics import calculate_sandbox_system_metrics, calculate_sandbox_program_metrics
+from utils.dashboard_metrics import calculate_sandbox_system_metrics, calculate_sandbox_program_metrics
 
 def render_sandbox_tab(baby_data, discharge_data, followup_data, kmc_session_data=None):
     """Render the Sandbox Metrics tab with System and Program sub-tabs."""

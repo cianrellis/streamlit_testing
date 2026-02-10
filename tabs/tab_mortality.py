@@ -6,8 +6,8 @@ import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
 from datetime import datetime
-from dashboard_utils import THEME_A_COLORS, safe_dataframe_display
-from dashboard_metrics import (
+from utils.dashboard_utils import THEME_A_COLORS, safe_dataframe_display
+from utils.dashboard_metrics import (
     calculate_death_rates, 
     calculate_comprehensive_hospital_mortality,
     calculate_detailed_mortality_list

@@ -8,7 +8,8 @@ import time
 from config import PROJECT_ID, USE_FAKE_DATA
 
 # --- Import from refactored modules ---
-from dashboard_utils import (
+# --- Import from refactored modules ---
+from utils.dashboard_utils import (
     PROJECT_COLORS,
     get_ram_usage,
     display_system_health,
@@ -28,7 +29,7 @@ from dashboard_utils import (
     categorize_discharge,
 )
 
-from dashboard_firebase import (
+from utils.dashboard_firebase import (
     initialize_firebase,
     load_collection_with_retry,
     load_query_with_retry,
@@ -38,7 +39,7 @@ from dashboard_firebase import (
     get_db_counts,
 )
 
-from dashboard_metrics import (
+from utils.dashboard_metrics import (
     calculate_registration_timeliness,
     calculate_kmc_initiation_metrics,
     calculate_average_kmc_by_location,
@@ -51,7 +52,7 @@ from dashboard_metrics import (
 
 
 
-from dashboard_tabs import (
+from utils.dashboard_tabs import (
     render_overview_tab,
     render_clinical_kpis_tab,
     render_mortality_tab,

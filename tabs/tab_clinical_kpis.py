@@ -8,7 +8,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-from dashboard_utils import THEME_A_COLORS, convert_unix_to_datetime, safe_dataframe_display
+from utils.dashboard_utils import THEME_A_COLORS, convert_unix_to_datetime, safe_dataframe_display
 
 
 def render_clinical_kpis_tab(filtered_data, discharge_data, followup_data, start_date, end_date):

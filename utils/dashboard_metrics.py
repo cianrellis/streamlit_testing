@@ -4,7 +4,7 @@ Dashboard metrics - KPI calculations and analysis functions.
 import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
-from dashboard_utils import (
+from .dashboard_utils import (
     convert_unix_to_datetime, 
     check_kmc_stability,
     categorize_discharge,
@@ -765,7 +765,7 @@ def calculate_detailed_mortality_list(baby_data, discharge_data):
 
 def calculate_daily_kmc_analysis(baby_data, discharge_data=None):
     """Calculate daily KMC analysis for last 7 days"""
-    from dashboard_utils import get_hierarchical_discharge_date
+    from .dashboard_utils import get_hierarchical_discharge_date
     
     today = datetime.now().date()
     analysis_data = {}

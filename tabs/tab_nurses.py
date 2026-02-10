@@ -4,8 +4,8 @@ Nurses Analysis Tab - Performance and activity monitoring
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-from dashboard_utils import safe_dataframe_display
-from dashboard_metrics import calculate_nurse_activity
+from utils.dashboard_utils import safe_dataframe_display
+from utils.dashboard_metrics import calculate_nurse_activity
 
 def render_nurses_tab(baby_data, discharge_data, start_date, end_date, selected_hospitals):
     """Render the Nurses Analysis tab"""
