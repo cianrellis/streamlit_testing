@@ -1,3 +1,6 @@
 streamlit
 google-cloud-firestore
 pandas
+plotly
+firebase-admin
+numpy
