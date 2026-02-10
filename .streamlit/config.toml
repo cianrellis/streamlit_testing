@@ -1,0 +1,3 @@
+[server]
+# Automatically rerun the app when a file changes.
+runOnSave = true
